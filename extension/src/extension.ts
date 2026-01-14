@@ -33,11 +33,11 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.setStatusBarMessage("$(sync~spin) Asking Gemini...", 3000);
 
 		try {
-			const repsonse = await axios.post('http://127.0.0.1:8000/analyze', {
+			const response = await axios.post('http://127.0.0.1:8000/analyze', {
 				code: text
 			});
 
-			const report = repsonse.data.analysis_result;
+			const report = response.data.analysis_result;
 
 			outputChannel.clear();
 			outputChannel.show(true);

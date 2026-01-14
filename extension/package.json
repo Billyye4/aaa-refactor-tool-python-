@@ -14,8 +14,8 @@
   "contributes": {
     "commands": [
       {
-        "command": "extension.helloWorld",
-        "title": "Hello World"
+        "command": "extension.pythonrefactortool",
+        "title": "Python Refactor Tool"
       }
     ]
   },

@@ -1,0 +1,11 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app  # Live-reloads code changes without rebuilding!
+    restart: always  # Restart automatically if it crashes or computer reboots
+
+# To turn on: docker compose up -d
+# To turn off: docker compose down
